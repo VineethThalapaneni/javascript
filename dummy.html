@@ -1,0 +1,56 @@
+<html>
+<head>
+<style>
+div{
+	border:5px solid black;
+	width:100px;
+	height:100px;
+	border-radius: 100px;
+	display:inline-block;
+	padding:70px;
+	box-sizing:border-box;
+	
+   }
+</style>
+</head>
+
+<body>
+	
+		<div style="background-color:red" id="div1" onclick="changeColor(this)">
+			First
+		</div>
+		<div style="background-color:yellow" id="div2" onclick="changeColor(this)">
+			Second
+		</div>
+		<div style="background-color:blue" id="div3" onclick="changeColor(this)">
+			Third
+		</div>
+		<div style="background-color:green" id="div4" onclick="changeColor(this)">
+			Fourth
+		</div>
+		<button onclick="">Start</button>
+		<button onclick="">Stop</button>
+		<script>
+	
+
+		function changeColor(temp){
+			
+			setInterval(hello,1000,temp);
+		}
+			var flag=false;
+			function hello(temp)
+			{
+				if(!flag){
+					temp.style.position="relative";
+					temp.style.top="200px";
+					flag=true;
+				}
+				else{
+					temp.style.position="relative";
+					temp.style.top="0px";
+					flag=false;
+			}
+		}	
+	</script>
+</body>
+</html>

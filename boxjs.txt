@@ -1,0 +1,22 @@
+<html>
+<head>
+<body>
+<title>box in js</title>
+</body>
+<style>
+#box{
+    border:solid;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:10px;
+    left:10px;
+}
+</style>
+<script>{
+
+
+ var a=document.getElementById('box')
+}
+</head>
+</html>
